@@ -32,6 +32,9 @@ span{
   padding-left: 10px;
   transition: all 1s;
 }
+
+
+
 .billCount{
   position: relative;
 }
@@ -106,6 +109,9 @@ span{
 
 .Contant{
   display: flex;
+  position: relative;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 .right{
@@ -115,6 +121,8 @@ span{
   color: #fff;
   font-size: 19px;
   padding: 20px 20px;
+  position: absolute;
+  margin-top: 20px;
 }
 table,tr,td{
   /* border: 1px solid black; */
@@ -159,6 +167,54 @@ button{
   margin-top: 25px;
 }
 
+@media screen and (max-width:526px){
+  .Contant{
+    width: 100%;
+    /* padding: 20px; */
+  }
+  .left{
+
+    min-height: 100vh;
+    padding:10px 5px 10px;
+    display: flex;
+  }
+  .right{
+    width: 90%;
+    margin: 20px;
+  }
+  .box{
+    width: 100px;
+    height: 200px;
+  }
+  .box{
+    width: 190px;
+    height: 190px;
+    position: relative;
+  }
+  .box>img{
+    height: 90%;
+    width: 100%;
+    padding: 10px;
+  }
+  .box>p:first-child{
+    font-size: 19px;
+  }
+  .box>h5{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:400px){
+  .box{
+    width: 150px;
+    height: 150px;
+    position: relative;
+  }
+  .box>h5{
+    font-size: 17px;
+  }
+}
+
 .hide{
   display: none;
 }
@@ -170,11 +226,53 @@ button{
 .logo{
   height: 100%;
   display: flex;
-  width: 19%;
+  /* width: 19%; */
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
 .logo>img{
   height: 150%;
+}
+
+@media screen and (max-width:494px) {
+  .navBar h1{
+    font-size: 20px;
+  }
+  .navBar>div:nth-child(2){
+    height: 100%;
+    gap: 10px;
+    padding-right: 5px;
+  }
+  .navBar input{
+    width: 150px;
+  }
+  .billIcon{
+    font-size: 20px;
+  }
+  .search{
+    font-size: 24px;
+  } 
+}
+
+@media screen and (max-width:390px) {
+  .logo>img{
+    height: 100%;
+  } 
+}
+
+@media screen and (max-width:370px) {
+  .navBar>div:nth-child(2){
+    position: relative;
+  }
+  .navBar input{
+    position: absolute;
+    left: -155px;
+  }
+  .billIcon{
+    font-size: 20px;
+  }
+  .search{
+    font-size: 24px;
+  } 
 }
